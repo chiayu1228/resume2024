@@ -69,7 +69,7 @@ body {
 .resumeBg .column {
   height: 200px;
   position: relative;
-  background: blue;
+  background: #4d4d4d;
 }
 
 .resumePhoto {

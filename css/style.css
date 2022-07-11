@@ -66,6 +66,10 @@ body {
   padding-right: 2rem;
 }
 
+.ui.grid + .grid {
+  padding-top: 3rem;
+}
+
 .resumeBg .column {
   height: 200px;
   position: relative;

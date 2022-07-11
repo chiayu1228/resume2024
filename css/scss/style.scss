@@ -110,6 +110,23 @@ main {
     background: $gray-third;
 }
 
+.ui.grid.container {
+    background: #FFF;
+}
+
+.resumePhoto {
+    width: 240px;
+    height: 240px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+    }
+}
+
 //+ Modal
 .modal {
     width: 400px;

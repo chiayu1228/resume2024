@@ -58,7 +58,7 @@ body {
 }
 
 .ui.grid.container.resumeBg {
-  height: 320px;
+  height: 280px;
 }
 
 .ui.grid > .column:not(.row), .ui.grid > .row > .column {

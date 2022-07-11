@@ -1,0 +1,184 @@
+$header-height: 7.6vh;
+$footer-height: 7.4vh;
+$mainBlock-w: 400px;
+$block-padding: 1rem;
+$color-main: #1dade5;
+$color-minor: lighten($color-main, 45%);
+$gray-main: #4d4d4d;
+$gray-minor: #898989;
+$gray-third: #eee;
+
+@mixin flex-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @content;
+}
+
+@mixin minor-block {
+    padding: $block-padding;
+}
+
+//+ rwd斷點設置
+$mobile: 576px;
+$tablets: 768px;
+$desktops: 992px;
+$desktops_lg: 1200px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin desktops {
+    @media (max-width: $desktops) {
+        @content;
+    }
+}
+
+@mixin desktops_lg {
+    @media (max-width: $desktops_lg) {
+        @content;
+    }
+}
+
+//- rwd斷點設置
+
+/* 公共樣式初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+// body {}
+
+a {
+    text-decoration: none;
+    /* 取消文字修飾 */
+}
+
+article,
+section,
+aside,
+address,
+nav,
+header,
+footer,
+img {
+    display: block;
+}
+
+img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+//- 公共樣式初始化
+
+body {
+    font-family: 'Microsoft JhengHei', 'MS Sans Serif';
+    color: $gray-main;
+    // background: $gray-main;
+}
+
+main {
+    background: $gray-third;
+}
+
+//+ Modal
+.modal {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    .modalPostion {
+        @include flex-content;
+        width: 100%;
+        margin: 30px 20px;
+    }
+
+    .modalContent {
+        min-width: 80%;
+        min-height: 160px;
+        max-height: 100%;
+        overflow: auto;
+        // padding: 30px 20px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .contentBlock {
+            font-size: 1.6rem;
+            padding: 30px 20px 0;
+        }
+
+        .btnBlock {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+
+            position: sticky;
+            bottom: 0;
+            background: #fff;
+
+            &.btnTwo {
+                justify-content: space-between;
+            }
+
+            button {
+                width: 45%;
+                font-size: 1.6rem;
+                color: #fff;
+                padding: 10px;
+                border-radius: 3px;
+
+                &.cancel {
+                    background: #666b80;
+                }
+
+                &.confirm {
+                    background: #e05f5f;
+                }
+            }
+        }
+    }
+}
+
+//- Modal

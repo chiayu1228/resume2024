@@ -168,6 +168,15 @@ main {
     }
 }
 
+.designTitle {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
 //+ Modal
 .modal {
     width: 400px;

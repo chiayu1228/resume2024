@@ -112,6 +112,19 @@ body {
   border-radius: 100%;
 }
 
+.designTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.designTitle h2 {
+  margin-bottom: 0;
+}
+
 .modal {
   width: 400px;
   height: 100vh;

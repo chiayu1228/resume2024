@@ -140,6 +140,15 @@ body {
   padding-left: 40px;
 }
 
+.workExp.list .item .workExpitem .header {
+  margin-bottom: 10px;
+}
+
+.workExp.list .item .workExpitem .content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .workExp.list .item .workExpitem:before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -147,7 +156,8 @@ body {
   position: absolute;
   top: 0;
   left: -0.5%;
-  font-size: 12px;
+  font-size: 8px;
+  color: #a8a8a8;
 }
 
 .workExp.list .item .workExpitem:after {
@@ -155,7 +165,7 @@ body {
   position: absolute;
   bottom: -5%;
   left: 0;
-  border-left: 1px solid #4d4d4d;
+  border-left: 1px solid #a8a8a8;
   height: 95%;
 }
 

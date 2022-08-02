@@ -189,6 +189,15 @@ main {
             padding-bottom: 20px;
             padding-left: 40px;
 
+            .header {
+                margin-bottom: 10px;
+            }
+
+            .content {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
             &:before {
                 font-family: "Font Awesome 6 Free";
                 font-weight: 900;
@@ -196,7 +205,8 @@ main {
                 position: absolute;
                 top: 0;
                 left: -0.5%;
-                font-size: 12px;
+                font-size: 8px;
+                color: #a8a8a8;
             }
 
             &:after {
@@ -204,7 +214,7 @@ main {
                 position: absolute;
                 bottom: -5%;
                 left: 0;
-                border-left: 1px solid #4d4d4d;
+                border-left: 1px solid #a8a8a8;
                 height: 95%;
             }
         }

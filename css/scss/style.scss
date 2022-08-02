@@ -6,7 +6,8 @@ $color-main: #1dade5;
 $color-minor: lighten($color-main, 45%);
 $gray-main: #4d4d4d;
 $gray-minor: #898989;
-$gray-third: #eee;
+$gray-bg: #eee;
+$gray-line: #a8a8a8;
 
 @mixin flex-content {
     display: flex;
@@ -103,11 +104,11 @@ button {
 body {
     font-family: 'Microsoft JhengHei', 'MS Sans Serif';
     color: $gray-main;
-    background: $gray-third;
+    background: $gray-bg;
 }
 
 main {
-    // background: $gray-third;
+    // background: $gray-bg;
 }
 
 .ui.grid.container {
@@ -128,6 +129,11 @@ main {
     padding-top: 3rem;
 }
 
+.ui.grid.container {
+    background: #FFF;
+}
+
+//+ 簡介
 .resumeBg {
 
     .column {
@@ -152,32 +158,49 @@ main {
     }
 }
 
-.ui.grid.container {
-    background: #FFF;
-}
+//- 簡介
 
-.resumePhoto {
-    width: 240px;
-    height: 240px;
+//+ 作品
+.portfolio {
+    .content {
+        font-size: 1rem;
+        line-height: 1.6;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        border-radius: 100%;
+        &.title {
+            color: $color-main;
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-align: center;
+        }
     }
 }
 
-.designTitle {
-    display: flex;
-    justify-content: space-between;
+//- 作品
 
-    h2 {
-        margin-bottom: 0;
+//+ 設計技能
+.skill {
+    .skillTitle {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .content {
+        font-size: 1.3rem;
+        line-height: 1.6;
+
+        &.app {
+            color: $gray-minor;
+        }
     }
 }
 
+//- 設計技能
+
+//+ 工作經驗
 .workExp.list {
     padding-left: 3rem;
 
@@ -206,7 +229,7 @@ main {
                 top: 0;
                 left: -0.5%;
                 font-size: 8px;
-                color: #a8a8a8;
+                color: $gray-line;
             }
 
             &:after {
@@ -214,7 +237,7 @@ main {
                 position: absolute;
                 bottom: -5%;
                 left: 0;
-                border-left: 1px solid #a8a8a8;
+                border-left: 1px solid $gray-line;
                 height: 95%;
             }
         }
@@ -229,6 +252,8 @@ main {
     }
 
 }
+
+//- 工作經驗
 
 //+ Modal
 .modal {

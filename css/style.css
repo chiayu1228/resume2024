@@ -98,6 +98,10 @@ body {
   border-radius: 100%;
 }
 
+.portfolio .column {
+  cursor: pointer;
+}
+
 .portfolio .content {
   font-size: 1rem;
   line-height: 1.6;
@@ -108,12 +112,25 @@ body {
   font-size: 1.2rem;
   font-weight: 900;
   text-align: center;
+  margin: 6px 0;
 }
 
 .portfolio .img {
   width: 100%;
   height: 160px;
   background: #eee;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.portfolio .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 3px;
 }
 
 .skill .skillTitle {
@@ -223,7 +240,7 @@ body {
   max-height: 100%;
   overflow: auto;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   display: -webkit-box;

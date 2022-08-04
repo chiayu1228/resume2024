@@ -2,6 +2,7 @@ $header-height: 7.6vh;
 $footer-height: 7.4vh;
 $mainBlock-w: 400px;
 $block-padding: 1rem;
+$border-radius: 3px;
 $color-main: #1dade5;
 $color-minor: lighten($color-main, 45%);
 $gray-main: #4d4d4d;
@@ -162,6 +163,10 @@ main {
 
 //+ 作品
 .portfolio {
+    .column {
+        cursor: pointer;
+    }
+
     .content {
         font-size: 1rem;
         line-height: 1.6;
@@ -171,13 +176,24 @@ main {
             font-size: 1.2rem;
             font-weight: 900;
             text-align: center;
+            margin: 6px 0;
         }
     }
 
     .img {
         width: 100%;
         height: 160px;
-        background: #eee;
+        background: $gray-bg;
+        border: 1px solid $gray-bg;
+        border-radius: $border-radius;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: $border-radius;
+        }
     }
 }
 
@@ -288,7 +304,7 @@ main {
         overflow: auto;
         // padding: 30px 20px;
         background: #fff;
-        border-radius: 6px;
+        border-radius: $border-radius;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
         display: flex;
@@ -318,7 +334,7 @@ main {
                 font-size: 1.6rem;
                 color: #fff;
                 padding: 10px;
-                border-radius: 3px;
+                border-radius: $border-radius;
 
                 &.cancel {
                     background: #666b80;

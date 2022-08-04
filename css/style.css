@@ -110,6 +110,12 @@ body {
   text-align: center;
 }
 
+.portfolio .img {
+  width: 100%;
+  height: 160px;
+  background: #eee;
+}
+
 .skill .skillTitle {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -184,8 +184,12 @@ main {
         width: 100%;
         height: 160px;
         background: $gray-bg;
-        border: 1px solid $gray-bg;
+        border: 1px solid $gray-line;
         border-radius: $border-radius;
+
+        &.lager {
+            height: 280px;
+        }
 
         img {
             width: 100%;

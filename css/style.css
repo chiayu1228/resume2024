@@ -133,18 +133,15 @@ main {
 
 .portfolio .column {
   cursor: pointer;
-  margin-top: 10px;
   height: 310px;
 }
 
 .portfolio .column:hover {
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-  bottom: 10px;
   background: #FFF;
   border: 1px solid #eee;
   border-radius: 3px;
-  margin-bottom: 10px;
 }
 
 .portfolio .column:hover .img img {
@@ -182,12 +179,6 @@ main {
   background: #eee;
   border: 1px solid #a8a8a8;
   border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   overflow: hidden;
 }
 

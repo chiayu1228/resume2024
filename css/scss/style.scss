@@ -193,16 +193,13 @@ main {
 .portfolio {
     .column {
         cursor: pointer;
-        margin-top: 10px;
         height: 310px;
 
         &:hover {
             box-shadow: 2px 2px 10px rgba(0, 0, 0, .15);
-            bottom: 10px;
             background: #FFF;
             border: 1px solid $gray-bg;
             border-radius: $border-radius;
-            margin-bottom: 10px;
 
             .img {
                 img {
@@ -242,8 +239,6 @@ main {
         background: $gray-bg;
         border: 1px solid $gray-line;
         border-radius: $border-radius;
-        display: flex;
-        justify-content: center;
         overflow: hidden;
 
         img {

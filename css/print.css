@@ -1,0 +1,52 @@
+@page {
+  size: A4 portrait;
+  margin: 0.25cm;
+}
+
+@media print {
+  .NotPrint {
+    display: none;
+  }
+  .PrintUnit {
+    page-break-before: always;
+  }
+  html,
+  body {
+    font-size: 16px;
+    background: transparent;
+  }
+  .ui.grid.container:last-of-type {
+    display: none;
+  }
+  .ui.grid.container.resumeBg {
+    height: 100px;
+  }
+  .resumeBg .column {
+    height: 80px;
+    background: transparent;
+  }
+  .resumePhoto {
+    width: 120px;
+    height: 120px;
+    bottom: -50px;
+  }
+  .portfolio .column {
+    height: auto;
+  }
+  .portfolio .column.lager {
+    height: auto;
+  }
+  .portfolio .column.lager .img {
+    height: 120px;
+  }
+  .portfolio .img {
+    height: 80px;
+  }
+  .skill .skillTitle h2 {
+    font-size: 1.2rem;
+  }
+  #btn_print {
+    display: none;
+  }
+}
+/*# sourceMappingURL=print.css.map */

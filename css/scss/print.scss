@@ -1,0 +1,86 @@
+//列印頁面設定
+@page {
+    size: A4 portrait;
+    margin: 0.25cm;
+    // size: A4 portrait;  //a4尺寸 直式
+    // margin: 1cm;  //邊距1公分
+    // orphans:4;   //頁面最後一段段落行數，預設值為2
+    // widows:2;  //頁面第一段段落行數，預設值為2
+}
+
+// 列印模式設定
+@media print {
+
+    // 隱藏不要被列印的元素
+    .NotPrint {
+        display: none;
+    }
+
+    // 要被列印的元素
+    .PrintUnit {
+        // 元素前要被分頁
+        page-break-before: always;
+        // 元素本身不能被分頁
+        // page-break-inside: avoid;
+    }
+
+    html,
+    body {
+        font-size: 16px;
+        background: transparent;
+    }
+
+    .ui.grid.container {
+
+        &:last-of-type {
+            display: none;
+        }
+
+        &.resumeBg {
+            height: 100px;
+        }
+    }
+
+    .resumeBg {
+        .column {
+            height: 80px;
+            background: transparent;
+        }
+    }
+
+    .resumePhoto {
+        width: 120px;
+        height: 120px;
+        bottom: -50px;
+    }
+
+    .portfolio {
+        .column {
+            height: auto;
+
+            &.lager {
+                height: auto;
+
+                .img {
+                    height: 120px;
+                }
+            }
+        }
+
+        .img {
+            height: 80px;
+        }
+    }
+
+    .skill {
+        .skillTitle {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    #btn_print {
+        display: none;
+    }
+}

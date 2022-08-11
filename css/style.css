@@ -406,52 +406,9 @@ main {
   margin: 0;
 }
 
-@page {
-  size: A4 portrait;
-  margin: 0.25cm;
-}
-
-@media print {
-  .notPrint {
-    display: none;
-  }
-  .PrintUnit {
-    page-break-before: always;
-  }
-  html,
-  body {
-    font-size: 16px;
-    background: transparent;
-  }
+@media (max-width: 576px) {
   #btn_print {
     display: none;
-  }
-  .ui.grid.container:last-of-type {
-    display: none;
-  }
-  .ui.grid.container.resumeBg {
-    height: 100px;
-  }
-  .resumeBg .column {
-    height: 80px;
-    background: transparent;
-  }
-  .resumePhoto {
-    width: 120px;
-    height: 120px;
-    bottom: -50px;
-  }
-  .portfolio .column {
-    height: auto;
-  }
-  .portfolio .column.lager {
-    height: auto;
-  }
-  .portfolio .column.lager .img {
-    height: 120px;
-  }
-  .portfolio .img {
-    height: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -32,11 +32,14 @@
 
 <body>
     <!-- <header>頭部</header> -->
-    <main class="index">
+    <main class="index" id="print">
         <!-- 照片 -->
         <section class="ui grid container resumeBg">
             <div class="row">
                 <div class="column">
+                    <button type="button" id="btn_print" onclick="onprint()" value="print">
+                        <i class="print icon"></i>
+                    </button>
                     <div class="resumePhoto">
                         <img src="./img/resumePhoto.jpg">
                     </div>
@@ -69,7 +72,8 @@
                                 <p><i class="envelope square icon"></i> <a
                                         href="mailto:jackie41716@hotmail.com">jackie41716@hotmail.com</a></p>
                                 <p><i class="phone square icon"></i> <a href="tel:+886-988188436">0988188436</a><br>
-                                    (聯繫方式請以E-mail為主，謝謝！)</p>
+                                    <span style="font-size:0.9rem;">(聯繫方式請以 E-mail 為主，謝謝！)</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -149,7 +153,7 @@
                         </a>
                     </div>
 
-                    <h2 class="ui header dividing">大型UI作品</h2>
+                    <h2 class="ui header dividing PrintUnit">大型UI作品</h2>
                     <div class="ui two column stackable grid portfolio">
                         <div class="column lager">
                             <div class="img">
@@ -227,7 +231,7 @@
         </section>
 
         <!-- 設計技能 -->
-        <section class="ui grid container">
+        <section class="ui grid container PrintUnit">
             <div class="row">
                 <div class="column">
                     <h1 class="ui header">設計技能</h1>
@@ -298,7 +302,7 @@
         </section class="ui grid container">
 
         <!-- 工作經驗 -->
-        <section class="ui grid container">
+        <section class="ui grid container PrintUnit">
             <div class="row">
                 <div class="column">
                     <h1 class="ui header">工作經驗</h1>
@@ -360,7 +364,7 @@
         </section>
 
         <!-- 自傳 -->
-        <section class="ui grid container">
+        <section class="ui grid container PrintUnit">
             <div class="row">
                 <div class="column">
                     <h1 class="ui header">我的自傳</h1>
@@ -416,5 +420,25 @@
     </main>
     <!-- <footer></footer> -->
 </body>
+
+<script>
+    function printHtml(html) {
+        var bodyHtml = document.body.innerHTML;
+        document.body.innerHTML = html;
+        window.print();
+        document.body.innerHTML = bodyHtml;
+        window.location.reload(); //列印輸出後更新頁面
+    }
+
+    function onprint() {
+        //去除超連結設置
+        // $('a').each(function (index) {
+        //     $(this).replaceWith($(this).html());
+        // });
+        // var html = $("body").html();
+        var html = $("#print").html();
+        printHtml(html);
+    }
+</script>
 
 </html>

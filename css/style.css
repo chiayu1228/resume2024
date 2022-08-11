@@ -1,17 +1,24 @@
 @charset "UTF-8";
 /* 公共樣式初始化 */
+html,
+body {
+  font-family: 'Microsoft JhengHei', 'MS Sans Serif';
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 20px;
-}
-
-@media (max-width: 576px) {
-  * {
-    font-size: 16px;
-  }
+  font-size: 1rem;
 }
 
 a {
@@ -48,7 +55,6 @@ button {
 }
 
 body {
-  font-family: 'Microsoft JhengHei', 'MS Sans Serif';
   color: #4d4d4d;
   background: #eee;
 }
@@ -65,24 +71,6 @@ footer {
 
 main {
   min-height: calc(100vh - $header-height - $footer-height);
-}
-
-.ui.grid.container {
-  background: #FFF;
-}
-
-.ui.grid.container.resumeBg {
-  height: 280px;
-}
-
-.ui.grid > .column:not(.row),
-.ui.grid > .row > .column {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.ui.grid + .grid {
-  padding-top: 3rem;
 }
 
 .ui.grid.container {
@@ -106,6 +94,24 @@ main {
   .ui.grid.container {
     margin: 0 !important;
   }
+}
+
+.ui.grid.container.resumeBg {
+  height: 280px;
+}
+
+.ui.grid > .column:not(.row),
+.ui.grid > .row > .column {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ui.grid + .grid {
+  padding-top: 3rem;
+}
+
+.resumeBg {
+  color: #fff;
 }
 
 .resumeBg .column {
@@ -159,20 +165,6 @@ main {
   height: 280px;
 }
 
-.portfolio .content {
-  color: #4d4d4d;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.portfolio .content.title {
-  color: #1dade5;
-  font-size: 1.2rem;
-  font-weight: 900;
-  text-align: center;
-  margin: 6px 0;
-}
-
 .portfolio .img {
   width: 100%;
   height: 160px;
@@ -192,6 +184,20 @@ main {
   border-radius: 3px;
 }
 
+.portfolio .content {
+  color: #4d4d4d;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.portfolio .content.title {
+  color: #1dade5;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 6px 0;
+}
+
 .skill .skillTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +215,7 @@ main {
 }
 
 .skill .content {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -238,13 +244,13 @@ main {
 }
 
 .workExp.list .item .workExpitem .header {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
 .workExp.list .item .workExpitem .content {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -255,7 +261,7 @@ main {
   position: absolute;
   top: 0;
   left: -0.5%;
-  font-size: 8px;
+  font-size: 0.8rem;
   color: #a8a8a8;
 }
 
@@ -376,5 +382,76 @@ main {
 
 .modal .modalContent .btnBlock button.confirm {
   background: #e05f5f;
+}
+
+#btn_print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: #FFF;
+  background: #898989;
+}
+
+#btn_print i {
+  margin: 0;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0.25cm;
+}
+
+@media print {
+  .notPrint {
+    display: none;
+  }
+  .PrintUnit {
+    page-break-before: always;
+  }
+  html,
+  body {
+    font-size: 16px;
+    background: transparent;
+  }
+  #btn_print {
+    display: none;
+  }
+  .ui.grid.container:last-of-type {
+    display: none;
+  }
+  .ui.grid.container.resumeBg {
+    height: 100px;
+  }
+  .resumeBg .column {
+    height: 80px;
+    background: transparent;
+  }
+  .resumePhoto {
+    width: 120px;
+    height: 120px;
+    bottom: -50px;
+  }
+  .portfolio .column {
+    height: auto;
+  }
+  .portfolio .column.lager {
+    height: auto;
+  }
+  .portfolio .column.lager .img {
+    height: 120px;
+  }
+  .portfolio .img {
+    height: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -54,18 +54,22 @@ $desktops_lg: 1200px;
 //- rwd斷點設置
 
 /* 公共樣式初始化 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
+html,
+body {
+    font-family: 'Microsoft JhengHei', 'MS Sans Serif';
+    font-size: 18px;
 
     @include mobile {
         font-size: 16px;
     }
 }
 
-// body {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
 
 a {
     text-decoration: none;
@@ -103,7 +107,6 @@ button {
 //- 公共樣式初始化
 
 body {
-    font-family: 'Microsoft JhengHei', 'MS Sans Serif';
     color: $gray-main;
     background: $gray-bg;
 }
@@ -125,24 +128,6 @@ main {
 
 .ui.grid.container {
     background: #FFF;
-
-    &.resumeBg {
-        height: 280px;
-    }
-}
-
-.ui.grid>.column:not(.row),
-.ui.grid>.row>.column {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.ui.grid+.grid {
-    padding-top: 3rem;
-}
-
-.ui.grid.container {
-    background: #FFF;
     margin: 0;
 
     .row {
@@ -160,10 +145,25 @@ main {
     @include mobile {
         margin: 0 !important;
     }
+
+    &.resumeBg {
+        height: 280px;
+    }
+}
+
+.ui.grid>.column:not(.row),
+.ui.grid>.row>.column {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.ui.grid+.grid {
+    padding-top: 3rem;
 }
 
 //+ 簡介
 .resumeBg {
+    color: #fff;
 
     .column {
         height: 200px;
@@ -219,20 +219,6 @@ main {
         }
     }
 
-    .content {
-        color: $gray-main;
-        font-size: 1rem;
-        line-height: 1.6;
-
-        &.title {
-            color: $color-main;
-            font-size: 1.2rem;
-            font-weight: 900;
-            text-align: center;
-            margin: 6px 0;
-        }
-    }
-
     .img {
         width: 100%;
         height: 160px;
@@ -247,6 +233,20 @@ main {
             object-fit: cover;
             object-position: top center;
             border-radius: $border-radius;
+        }
+    }
+
+    .content {
+        color: $gray-main;
+        font-size: 0.75rem;
+        line-height: 1.6;
+
+        &.title {
+            color: $color-main;
+            font-size: 0.9rem;
+            font-weight: 900;
+            text-align: center;
+            margin: 6px 0;
         }
     }
 }
@@ -266,7 +266,7 @@ main {
     }
 
     .content {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.6;
 
         &.app {
@@ -294,13 +294,13 @@ main {
             padding-left: 40px;
 
             .header {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 line-height: 1.6;
                 margin-bottom: 10px;
             }
 
             .content {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 line-height: 1.6;
             }
 
@@ -311,7 +311,7 @@ main {
                 position: absolute;
                 top: 0;
                 left: -0.5%;
-                font-size: 8px;
+                font-size: 0.8rem;
                 color: $gray-line;
 
                 @include mobile {
@@ -418,3 +418,103 @@ main {
 }
 
 //- Modal
+
+#btn_print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: #FFF;
+    background: $gray-minor;
+
+    i {
+        margin: 0;
+    }
+}
+
+//列印頁面設定
+@page {
+    size: A4 portrait;
+    margin: 0.25cm;
+    // size: A4 portrait;  //a4尺寸 直式
+    // margin: 1cm;  //邊距1公分
+    // orphans:4;   //頁面最後一段段落行數，預設值為2
+    // widows:2;  //頁面第一段段落行數，預設值為2
+}
+
+// 列印模式設定
+@media print {
+
+    // 隱藏不要被列印的元素
+    .notPrint {
+        display: none;
+    }
+
+    // 要被列印的元素
+    .PrintUnit {
+        // 元素前要被分頁
+        page-break-before: always;
+        // 元素本身不能被分頁
+        // page-break-inside: avoid;
+    }
+
+    html,
+    body {
+        font-size: 16px;
+        background: transparent;
+    }
+
+    // h1.ui.header, h2.ui.header, h3.ui.header {
+    //     font-size: 1.1rem;
+    // }
+
+    #btn_print {
+        display: none;
+    }
+
+    .ui.grid.container {
+
+        &:last-of-type, {
+            display: none;
+        }
+
+        &.resumeBg {
+            height: 100px;
+        }
+    }
+
+    .resumeBg {
+        .column {
+            height: 80px;
+            background: transparent;
+        }
+    }
+
+    .resumePhoto {
+        width: 120px;
+        height: 120px;
+        bottom: -50px;
+    }
+
+    .portfolio {
+        .column {
+            height: auto;
+
+            &.lager {
+                height: auto;
+
+                .img {
+                    height: 120px;
+                }
+            }
+        }
+
+        .img {
+            height: 80px;
+        }
+    }
+}

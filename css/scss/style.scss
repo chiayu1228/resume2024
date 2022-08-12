@@ -159,6 +159,11 @@ main {
 .ui.grid>.row>.column {
     padding-left: 2rem;
     padding-right: 2rem;
+
+    @include mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .ui.grid+.grid {

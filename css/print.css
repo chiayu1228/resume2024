@@ -12,23 +12,23 @@
   }
   html,
   body {
-    font-size: 16px;
+    font-size: 12pt;
     background: transparent;
   }
   .ui.grid.container:last-of-type {
     display: none;
   }
   .ui.grid.container.resumeBg {
-    height: 140px;
+    height: 140pt;
   }
   .resumeBg .column {
-    height: 120px;
+    height: 120pt;
     background: transparent;
   }
   .resumePhoto {
-    width: 140px;
-    height: 140px;
-    bottom: -40px;
+    width: 140pt;
+    height: 140pt;
+    bottom: -40pt;
   }
   .resumeQR {
     display: block;
@@ -43,10 +43,10 @@
     height: auto;
   }
   .portfolio .column.lager .img {
-    height: 120px;
+    height: 120pt;
   }
   .portfolio .img {
-    height: 80px;
+    height: 60pt;
   }
   .skill .skillTitle h2 {
     font-size: 1.2rem;

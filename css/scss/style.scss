@@ -247,6 +247,10 @@ main {
         cursor: pointer;
         height: 310px;
 
+        @include mobile {
+            height: auto;
+        }
+
         &:hover {
             box-shadow: 2px 2px 10px rgba(0, 0, 0, .15);
             background: #FFF;
@@ -265,8 +269,16 @@ main {
         &.lager {
             height: 410px;
 
+            @include mobile {
+                height: auto;
+            }
+
             .img {
                 height: 280px;
+
+                @include mobile {
+                    height: 180px;
+                }
             }
         }
     }
@@ -278,6 +290,10 @@ main {
         border: 1px solid $gray-line;
         border-radius: $border-radius;
         overflow: hidden;
+
+        @include mobile {
+            height: 180px;
+        }
 
         img {
             object-fit: cover;

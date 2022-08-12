@@ -1,6 +1,5 @@
 @page {
   size: A4 portrait;
-  margin: 0.25cm;
 }
 
 @media print {
@@ -19,16 +18,16 @@
     display: none;
   }
   .ui.grid.container.resumeBg {
-    height: 140pt;
+    height: 110pt;
   }
   .resumeBg .column {
-    height: 120pt;
+    height: 110pt;
     background: transparent;
   }
   .resumePhoto {
-    width: 140pt;
-    height: 140pt;
-    bottom: -40pt;
+    width: 110pt;
+    height: 110pt;
+    bottom: -10pt;
   }
   .resumeQR {
     display: block;

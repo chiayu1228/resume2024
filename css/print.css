@@ -20,6 +20,9 @@
   .ui.grid.container.resumeBg {
     height: 110pt;
   }
+  .ui.grid + .grid {
+    padding-top: 2rem;
+  }
   .resumeBg .column {
     height: 110pt;
     background: transparent;

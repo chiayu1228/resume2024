@@ -41,6 +41,10 @@
         }
     }
 
+    .ui.grid+.grid {
+        padding-top: 2rem;
+    }
+
     .resumeBg {
         .column {
             height: 110pt;

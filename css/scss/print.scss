@@ -1,7 +1,7 @@
 //列印頁面設定
 @page {
     size: A4 portrait;
-    // margin: 0.25cm;
+    margin: 0.25cm;
     // size: A4 portrait;  //a4尺寸 直式
     // margin: 1cm;  //邊距1公分
     // orphans:4;   //頁面最後一段段落行數，預設值為2
@@ -43,6 +43,11 @@
 
     .ui.grid+.grid {
         padding-top: 2rem;
+    }
+
+    h1.ui.header,
+    h2.ui.header {
+        font-size: 1.5rem;
     }
 
     .resumeBg {

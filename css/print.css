@@ -1,6 +1,5 @@
 @page {
   size: A4 portrait;
-  margin: 0.25cm;
 }
 
 @media print {
@@ -21,12 +20,13 @@
   .ui.grid.container.resumeBg {
     height: 110pt;
   }
+  .ui.grid > .column:not(.row),
+  .ui.grid > .row > .column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .ui.grid + .grid {
     padding-top: 2rem;
-  }
-  h1.ui.header,
-  h2.ui.header {
-    font-size: 1.5rem;
   }
   .resumeBg .column {
     height: 110pt;

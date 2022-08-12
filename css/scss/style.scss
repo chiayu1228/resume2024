@@ -24,7 +24,7 @@ $gray-line: #a8a8a8;
 //+ rwd斷點設置
 $mobile: 576px;
 $tablets: 768px;
-$desktops: 992px;
+$desktops: 1024px;
 $desktops_lg: 1200px;
 
 @mixin mobile {
@@ -160,7 +160,7 @@ main {
     padding-left: 2rem;
     padding-right: 2rem;
 
-    @include mobile {
+    @include desktops {
         padding-left: 1rem;
         padding-right: 1rem;
     }

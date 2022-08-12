@@ -112,7 +112,7 @@ main {
   padding-right: 2rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .ui.grid > .column:not(.row),
   .ui.grid > .row > .column {
     padding-left: 1rem;

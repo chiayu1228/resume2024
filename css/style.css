@@ -100,6 +100,12 @@ main {
   height: 280px;
 }
 
+@media (max-width: 576px) {
+  .ui.grid.container.resumeBg {
+    height: 160px;
+  }
+}
+
 .ui.grid > .column:not(.row),
 .ui.grid > .row > .column {
   padding-left: 2rem;
@@ -120,11 +126,25 @@ main {
   background: #4d4d4d;
 }
 
+@media (max-width: 576px) {
+  .resumeBg .column {
+    height: 120px;
+  }
+}
+
 .resumePhoto {
   width: 240px;
   height: 240px;
   position: absolute;
   bottom: -100px;
+}
+
+@media (max-width: 576px) {
+  .resumePhoto {
+    width: 160px;
+    height: 160px;
+    bottom: -60px;
+  }
 }
 
 .resumePhoto img {

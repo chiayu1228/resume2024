@@ -148,6 +148,10 @@ main {
 
     &.resumeBg {
         height: 280px;
+
+        @include mobile {
+            height: 160px;
+        }
     }
 }
 
@@ -169,6 +173,10 @@ main {
         height: 200px;
         position: relative;
         background: $gray-main;
+
+        @include mobile {
+            height: 120px;
+        }
     }
 }
 
@@ -177,6 +185,12 @@ main {
     height: 240px;
     position: absolute;
     bottom: -100px;
+
+    @include mobile {
+        width: 160px;
+        height: 160px;
+        bottom: -60px;
+    }
 
     img {
         width: 100%;

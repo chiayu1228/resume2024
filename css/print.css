@@ -19,16 +19,16 @@
     display: none;
   }
   .ui.grid.container.resumeBg {
-    height: 100px;
+    height: 140px;
   }
   .resumeBg .column {
-    height: 80px;
+    height: 120px;
     background: transparent;
   }
   .resumePhoto {
-    width: 120px;
-    height: 120px;
-    bottom: -50px;
+    width: 140px;
+    height: 140px;
+    bottom: -40px;
   }
   .portfolio .column {
     height: auto;

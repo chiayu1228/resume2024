@@ -190,12 +190,6 @@ main {
   margin: 0;
 }
 
-@media (max-width: 576px) {
-  #btn_print {
-    display: none;
-  }
-}
-
 .portfolio .column {
   cursor: pointer;
   height: 310px;

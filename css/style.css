@@ -148,13 +148,52 @@ main {
 }
 
 .resumePhoto img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
   border-radius: 100%;
+}
+
+.resumeQR {
+  display: none;
+  width: 80px;
+  margin-left: auto;
+  color: #4d4d4d;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.resumeQR p {
+  font-size: 0.8rem;
+}
+
+#btn_print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: #FFF;
+  background: #898989;
+}
+
+#btn_print i {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  #btn_print {
+    display: none;
+  }
 }
 
 .portfolio .column {
@@ -195,8 +234,6 @@ main {
 }
 
 .portfolio .img img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top center;
@@ -402,33 +439,5 @@ main {
 
 .modal .modalContent .btnBlock button.confirm {
   background: #e05f5f;
-}
-
-#btn_print {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  color: #FFF;
-  background: #898989;
-}
-
-#btn_print i {
-  margin: 0;
-}
-
-@media (max-width: 576px) {
-  #btn_print {
-    display: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */

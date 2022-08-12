@@ -30,6 +30,12 @@
     height: 140px;
     bottom: -40px;
   }
+  .resumeQR {
+    display: block;
+  }
+  #btn_print {
+    display: none;
+  }
   .portfolio .column {
     height: auto;
   }
@@ -44,9 +50,6 @@
   }
   .skill .skillTitle h2 {
     font-size: 1.2rem;
-  }
-  #btn_print {
-    display: none;
   }
 }
 /*# sourceMappingURL=print.css.map */

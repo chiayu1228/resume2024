@@ -54,6 +54,14 @@
         bottom: -40px;
     }
 
+    .resumeQR {
+        display: block;
+    }
+
+    #btn_print {
+        display: none;
+    }
+
     .portfolio {
         .column {
             height: auto;
@@ -78,9 +86,5 @@
                 font-size: 1.2rem;
             }
         }
-    }
-
-    #btn_print {
-        display: none;
     }
 }

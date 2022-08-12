@@ -193,11 +193,44 @@ main {
     }
 
     img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         object-position: top;
         border-radius: 100%;
+    }
+}
+
+.resumeQR {
+    display: none;
+    width: 80px;
+    // height: 80px;
+    margin-left: auto;
+    color: $gray-main;
+    text-align: center;
+    padding: 10px 0;
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+#btn_print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: #FFF;
+    background: $gray-minor;
+
+    i {
+        margin: 0;
+    }
+
+    @include mobile {
+        display: none;
     }
 }
 
@@ -242,8 +275,6 @@ main {
         overflow: hidden;
 
         img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
             object-position: top center;
             border-radius: $border-radius;
@@ -432,24 +463,3 @@ main {
 }
 
 //- Modal
-
-#btn_print {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    color: #FFF;
-    background: $gray-minor;
-
-    i {
-        margin: 0;
-    }
-
-    @include mobile {
-        display: none;
-    }
-}

@@ -198,6 +198,12 @@ main {
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  #btn_print {
+    display: none;
+  }
+}
+
 .portfolio .column {
   cursor: pointer;
   height: 310px;

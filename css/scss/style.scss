@@ -234,9 +234,9 @@ main {
         margin: 0;
     }
 
-    // @include mobile {
-    //     display: none;
-    // }
+    @include desktops {
+        display: none;
+    }
 }
 
 //- 簡介

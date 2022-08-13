@@ -19,6 +19,7 @@
   }
   .ui.grid.container.resumeBg {
     height: 110pt;
+    display: none;
   }
   .ui.grid > .column:not(.row),
   .ui.grid > .row > .column {

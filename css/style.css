@@ -129,8 +129,8 @@ main {
 }
 
 .ui.container.resumePrint .resumePhoto.image {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .ui.container.resumePrint .resumePhoto.image img {

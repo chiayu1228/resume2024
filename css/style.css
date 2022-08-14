@@ -124,6 +124,23 @@ main {
   padding-top: 3rem;
 }
 
+.ui.container.resumePrint {
+  display: none;
+}
+
+.ui.container.resumePrint .resumePhoto.image {
+  width: 120px;
+  height: 120px;
+}
+
+.ui.container.resumePrint .resumePhoto.image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 100%;
+}
+
 .resumeBg {
   color: #fff;
 }
@@ -140,7 +157,7 @@ main {
   }
 }
 
-.resumePhoto {
+.resumeBg .resumePhoto {
   width: 240px;
   height: 240px;
   position: absolute;
@@ -148,14 +165,14 @@ main {
 }
 
 @media (max-width: 576px) {
-  .resumePhoto {
+  .resumeBg .resumePhoto {
     width: 160px;
     height: 160px;
     bottom: -60px;
   }
 }
 
-.resumePhoto img {
+.resumeBg .resumePhoto img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -164,12 +181,13 @@ main {
 }
 
 .resumeQR {
-  display: none;
   width: 80px;
   margin-left: auto;
   color: #4d4d4d;
   text-align: center;
-  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .resumeQR p {

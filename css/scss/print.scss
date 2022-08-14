@@ -37,7 +37,6 @@
         }
 
         &.resumeBg {
-            height: 110pt;
             display: none;
         }
     }
@@ -52,9 +51,13 @@
         padding-top: 2rem;
     }
 
+    .ui.container.resumePrint {
+        display: block;
+    }
+
     .resumeBg {
         .column {
-            height: 110pt;
+            height: auto;
             background: transparent;
         }
     }

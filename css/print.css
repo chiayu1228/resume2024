@@ -18,7 +18,6 @@
     display: none;
   }
   .ui.grid.container.resumeBg {
-    height: 110pt;
     display: none;
   }
   .ui.grid > .column:not(.row),
@@ -29,8 +28,11 @@
   .ui.grid + .grid {
     padding-top: 2rem;
   }
+  .ui.container.resumePrint {
+    display: block;
+  }
   .resumeBg .column {
-    height: 110pt;
+    height: auto;
     background: transparent;
   }
   .resumePhoto {

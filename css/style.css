@@ -129,8 +129,8 @@ main {
 }
 
 .ui.container.resumePrint .resumePhoto.image {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .ui.container.resumePrint .resumePhoto.image img {
@@ -191,7 +191,7 @@ main {
 }
 
 .resumeQR p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 #btn_print {

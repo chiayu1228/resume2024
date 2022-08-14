@@ -9,10 +9,16 @@
   .PrintUnit {
     page-break-before: always;
   }
+  .PrintUnit.ui.grid + .grid {
+    padding-top: 0;
+  }
   html,
   body {
     font-size: 12pt;
     background: transparent;
+  }
+  .ui.grid.container:nth-last-of-type(2) {
+    padding-bottom: 0;
   }
   .ui.grid.container:last-of-type {
     display: none;
@@ -27,6 +33,9 @@
   }
   .ui.grid + .grid {
     padding-top: 2rem;
+  }
+  .ui.grid + .grid.resumePrint {
+    padding-top: 0;
   }
   .ui.container.resumePrint {
     display: block;

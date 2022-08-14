@@ -22,6 +22,10 @@
         page-break-before: always;
         // 元素本身不能被分頁
         // page-break-inside: avoid;
+        
+        &.ui.grid + .grid {
+            padding-top: 0;
+        }
     }
 
     html,
@@ -31,6 +35,10 @@
     }
 
     .ui.grid.container {
+
+        &:nth-last-of-type(2) {
+            padding-bottom: 0;
+        }
 
         &:last-of-type {
             display: none;
@@ -49,6 +57,10 @@
 
     .ui.grid+.grid {
         padding-top: 2rem;
+
+        &.resumePrint {
+            padding-top: 0;
+        }
     }
 
     .ui.container.resumePrint {

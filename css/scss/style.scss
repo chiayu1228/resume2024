@@ -3,6 +3,7 @@ $footer-height: 7.4vh;
 $mainBlock-w: 400px;
 $block-padding: 1rem;
 $border-radius: 3px;
+$line-height: 1.6;
 $color-main: #1dade5;
 $color-minor: lighten($color-main, 45%);
 $gray-main: #4d4d4d;
@@ -231,7 +232,7 @@ main {
     right: 0;
 
     p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -322,7 +323,7 @@ main {
     .content {
         color: $gray-main;
         font-size: 0.75rem;
-        line-height: 1.6;
+        line-height: $line-height;
 
         &.title {
             color: $color-main;
@@ -350,7 +351,7 @@ main {
 
     .content {
         font-size: 1rem;
-        line-height: 1.6;
+        line-height: $line-height;
 
         &.app {
             color: $gray-minor;
@@ -378,13 +379,13 @@ main {
 
             .header {
                 font-size: 1.1rem;
-                line-height: 1.6;
+                line-height: $line-height;
                 margin-bottom: 10px;
             }
 
             .content {
                 font-size: 1rem;
-                line-height: 1.6;
+                line-height: $line-height;
             }
 
             &:before {

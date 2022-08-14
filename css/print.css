@@ -9,9 +9,6 @@
   .PrintUnit {
     page-break-before: always;
   }
-  .PrintUnit.ui.grid + .grid {
-    padding-top: 0;
-  }
   html,
   body {
     font-size: 12pt;
@@ -52,6 +49,9 @@
   .resumeQR {
     display: block;
   }
+  .resumeQR p {
+    font-size: 6pt;
+  }
   #btn_print {
     display: none;
   }
@@ -66,6 +66,9 @@
   }
   .portfolio .img {
     height: 80pt;
+  }
+  .portfolio .content {
+    line-height: 1.3;
   }
   .skill .skillTitle h2 {
     font-size: 1.2rem;

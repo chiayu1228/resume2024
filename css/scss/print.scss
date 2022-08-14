@@ -1,3 +1,5 @@
+$line-height: 1.3;
+
 //列印頁面設定
 @page {
     size: A4 portrait;
@@ -22,10 +24,10 @@
         page-break-before: always;
         // 元素本身不能被分頁
         // page-break-inside: avoid;
-        
-        &.ui.grid + .grid {
-            padding-top: 0;
-        }
+
+        // &.ui.grid + .grid {
+        //     padding-top: 0;
+        // }
     }
 
     html,
@@ -82,6 +84,10 @@
 
     .resumeQR {
         display: block;
+
+        p {
+            font-size: 6pt;
+        }
     }
 
     #btn_print {
@@ -103,6 +109,10 @@
 
         .img {
             height: 80pt;
+        }
+
+        .content {
+            line-height: $line-height;
         }
     }
 

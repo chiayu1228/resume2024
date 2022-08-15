@@ -348,7 +348,7 @@ main {
 
 @media (max-width: 576px) {
   .workExp.list {
-    padding-left: 0;
+    padding-left: 0.5rem;
   }
 }
 
@@ -360,6 +360,12 @@ main {
   position: relative;
   padding-bottom: 20px;
   padding-left: 40px;
+}
+
+@media (max-width: 576px) {
+  .workExp.list .item .workExpitem {
+    padding-left: 20px;
+  }
 }
 
 .workExp.list .item .workExpitem .header {

@@ -9,7 +9,7 @@
   .PrintUnit {
     page-break-before: always;
   }
-  .PrintUnit.ui.grid + .grid {
+  .PrintUnit.ui.grid.container {
     padding-top: 0;
   }
   html,
@@ -74,7 +74,10 @@
     line-height: 1.3;
   }
   .skill .skillTitle h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+  .skill .content {
+    line-height: 1.3;
   }
 }
 /*# sourceMappingURL=print.css.map */

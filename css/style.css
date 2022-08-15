@@ -76,6 +76,11 @@ main {
 .ui.grid.container {
   background: #FFF;
   margin: 0;
+  padding-top: 3rem;
+}
+
+.ui.grid.container:first-of-type {
+  padding-top: 0;
 }
 
 .ui.grid.container .row {
@@ -118,10 +123,6 @@ main {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.ui.grid + .grid {
-  padding-top: 3rem;
 }
 
 .ui.container.resumePrint {

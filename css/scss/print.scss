@@ -127,4 +127,16 @@ $line-height: 1.3;
             line-height: $line-height;
         }
     }
+
+    .workExp.list {
+        .item {
+            padding: 0;
+
+            .workExpitem {
+                &:before {
+                    left: -0.5%;
+                }
+            }
+        }
+    }
 }

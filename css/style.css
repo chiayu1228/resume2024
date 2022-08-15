@@ -61,12 +61,12 @@ body {
 
 header {
   height: 7.6vh;
-  background: #6a4c9c;
+  background: #006894;
 }
 
 footer {
   height: 7.4vh;
-  background: #6a4c9c;
+  background: #006894;
 }
 
 main {
@@ -92,7 +92,7 @@ main {
 }
 
 .ui.grid.container:last-of-type {
-  background: #6a4c9c;
+  background: #006894;
 }
 
 @media (max-width: 576px) {
@@ -149,7 +149,7 @@ main {
 .resumeBg .column {
   height: 200px;
   position: relative;
-  background: #6a4c9c;
+  background: #006894;
   z-index: 0;
 }
 
@@ -221,7 +221,7 @@ main {
   height: 50px;
   cursor: pointer;
   color: #FFF;
-  background: #9278bd;
+  background: #009ee1;
 }
 
 #btn_print i {
@@ -310,7 +310,7 @@ main {
 }
 
 .portfolio .content.title {
-  color: #6a4c9c;
+  color: #006894;
   font-size: 0.9rem;
   font-weight: 900;
   text-align: center;

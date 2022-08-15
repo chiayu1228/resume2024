@@ -25,9 +25,9 @@ $line-height: 1.3;
         // 元素本身不能被分頁
         // page-break-inside: avoid;
 
-        // &.ui.grid + .grid {
-        //     padding-top: 0;
-        // }
+        &.ui.grid + .grid {
+            padding-top: 0;
+        }
     }
 
     html,

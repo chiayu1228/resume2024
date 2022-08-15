@@ -9,6 +9,9 @@
   .PrintUnit {
     page-break-before: always;
   }
+  .PrintUnit.ui.grid + .grid {
+    padding-top: 0;
+  }
   html,
   body {
     font-size: 12pt;

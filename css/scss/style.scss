@@ -132,6 +132,10 @@ main {
     margin: 0;
     padding-top: 3rem;
     box-shadow: 4px 0 8px -4px rgba(0, 0, 0, .15), -4px 0 8px -4px rgba(0, 0, 0, .15);
+
+    @include mobile {
+        box-shadow: none;
+    }
     
     &:first-of-type {
         padding-top:0;

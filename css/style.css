@@ -81,6 +81,13 @@ main {
           box-shadow: 4px 0 8px -4px rgba(0, 0, 0, 0.15), -4px 0 8px -4px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 576px) {
+  .ui.grid.container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .ui.grid.container:first-of-type {
   padding-top: 0;
 }

@@ -133,7 +133,7 @@ main {
     padding-top: 3rem;
     box-shadow: 4px 0 8px -4px rgba(0, 0, 0, .15), -4px 0 8px -4px rgba(0, 0, 0, .15);
 
-    @include mobile {
+    @include desktops {
         box-shadow: none;
     }
     

@@ -77,6 +77,8 @@ main {
   background: #FFF;
   margin: 0;
   padding-top: 3rem;
+  -webkit-box-shadow: 4px 0 8px -4px rgba(0, 0, 0, 0.15), -4px 0 8px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 0 8px -4px rgba(0, 0, 0, 0.15), -4px 0 8px -4px rgba(0, 0, 0, 0.15);
 }
 
 .ui.grid.container:first-of-type {

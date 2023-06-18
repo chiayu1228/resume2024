@@ -73,7 +73,6 @@ body {
 }
 
 p {
-    font-size: 1rem;
     line-height: $line-height;
 }
 
@@ -142,8 +141,8 @@ main {
     background: #FFF;
     margin: 0;
     padding-top: 3rem;
-    box-shadow: 0 -8px 0 0 #fff, inset 0 8px 0 0 #fff, 
-    4px 0 8px -4px rgba(0, 0, 0, .15), -4px 0 8px -4px rgba(0, 0, 0, .15);
+    box-shadow: 0 -8px 0 0 #fff, inset 0 8px 0 0 #fff,
+        4px 0 8px -4px rgba(0, 0, 0, .15), -4px 0 8px -4px rgba(0, 0, 0, .15);
 
     @include desktops {
         box-shadow: none;

@@ -72,6 +72,11 @@ body {
     font-size: 1rem;
 }
 
+p {
+    font-size: 1rem;
+    line-height: $line-height;
+}
+
 a {
     text-decoration: none;
     /* 取消文字修飾 */

@@ -1,7 +1,6 @@
 @page {
   size: A4 portrait;
 }
-
 @media print {
   .NotPrint {
     display: none;
@@ -18,8 +17,7 @@
     background: transparent;
   }
   .ui.grid.container {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .ui.grid.container:nth-last-of-type(2) {
     padding-bottom: 0;
@@ -89,5 +87,4 @@
   .workExp.list .item .workExpitem:before {
     left: -0.5%;
   }
-}
-/*# sourceMappingURL=print.css.map */
+}/*# sourceMappingURL=print.css.map */

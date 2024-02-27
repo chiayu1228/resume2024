@@ -429,6 +429,7 @@ main {
                 left: -0.5%;
                 font-size: 0.8rem;
                 color: $gray-line;
+                z-index: 1;
 
                 @include mobile {
                     left: -1.5%;
@@ -461,6 +462,16 @@ main {
 }
 
 //- 工作經驗
+
+//+ 自傳
+ol {
+    li {
+        p{
+            line-height: 1.2;
+        }
+    }
+}
+//- 自傳
 
 //+ Modal
 .modal {

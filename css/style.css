@@ -346,6 +346,7 @@ main {
   left: -0.5%;
   font-size: 0.8rem;
   color: #a8a8a8;
+  z-index: 1;
 }
 @media (max-width: 576px) {
   .workExp.list .item .workExpitem:before {
@@ -367,6 +368,10 @@ main {
 }
 .workExp.list .item:last-of-type .workExpitem:after {
   border-width: 0;
+}
+
+ol li p {
+  line-height: 1.2;
 }
 
 .modal {

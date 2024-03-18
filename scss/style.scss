@@ -291,10 +291,10 @@ main {
 .portfolio {
     .column {
         cursor: pointer;
-        height: 310px;
+        min-height: 310px;
 
         @include mobile {
-            height: auto;
+            min-height: auto;
         }
 
         &:hover {
@@ -313,10 +313,10 @@ main {
         }
 
         &.lager {
-            height: 410px;
+            min-height: 410px;
 
             @include mobile {
-                height: auto;
+                min-height: auto;
             }
 
             .img {

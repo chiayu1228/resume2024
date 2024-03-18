@@ -225,11 +225,11 @@ main {
 
 .portfolio .column {
   cursor: pointer;
-  height: 310px;
+  min-height: 310px;
 }
 @media (max-width: 576px) {
   .portfolio .column {
-    height: auto;
+    min-height: auto;
   }
 }
 .portfolio .column:hover {
@@ -243,11 +243,11 @@ main {
   transform-origin: top;
 }
 .portfolio .column.lager {
-  height: 410px;
+  min-height: 410px;
 }
 @media (max-width: 576px) {
   .portfolio .column.lager {
-    height: auto;
+    min-height: auto;
   }
 }
 .portfolio .column.lager .img {

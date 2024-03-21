@@ -98,10 +98,10 @@ $line-height: 1.3;
 
     .portfolio {
         .column {
-            height: auto;
+            min-height: auto;
 
             &.lager {
-                height: auto;
+                min-height: auto;
 
                 .img {
                     height: 120pt;

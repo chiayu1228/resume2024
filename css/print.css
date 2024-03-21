@@ -61,10 +61,10 @@
     display: none;
   }
   .portfolio .column {
-    height: auto;
+    min-height: auto;
   }
   .portfolio .column.lager {
-    height: auto;
+    min-height: auto;
   }
   .portfolio .column.lager .img {
     height: 120pt;

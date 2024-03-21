@@ -80,40 +80,39 @@ footer {
 main {
   min-height: 85vh;
 }
-
-.ui.grid.container {
+main .ui.grid.container {
   background: #FFF;
   margin: 0;
   padding-top: 3rem;
   box-shadow: 0 -8px 0 0 #fff, inset 0 8px 0 0 #fff, 4px 0 8px -4px rgba(0, 0, 0, 0.15), -4px 0 8px -4px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 1024px) {
-  .ui.grid.container {
+  main .ui.grid.container {
     box-shadow: none;
   }
 }
-.ui.grid.container:first-of-type {
+main .ui.grid.container:first-of-type {
   padding-top: 0;
 }
-.ui.grid.container .row {
+main .ui.grid.container .row {
   padding: 0;
 }
-.ui.grid.container:nth-last-of-type(2) {
+main .ui.grid.container:nth-last-of-type(2) {
   padding-bottom: 30px;
 }
-.ui.grid.container:last-of-type {
+main .ui.grid.container:last-of-type {
   background: #006894;
 }
 @media (max-width: 576px) {
-  .ui.grid.container {
+  main .ui.grid.container {
     margin: 0 !important;
   }
 }
-.ui.grid.container.resumeBg {
+main .ui.grid.container.resumeBg {
   height: 280px;
 }
 @media (max-width: 576px) {
-  .ui.grid.container.resumeBg {
+  main .ui.grid.container.resumeBg {
     height: 160px;
   }
 }
@@ -374,64 +373,34 @@ ol li p {
   line-height: 1.2;
 }
 
-.modal {
-  width: 400px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
+.ui.modal .content.scrolling {
+  min-height: calc(60vh - 10em);
+  max-height: calc(100vh - 10em);
+}
+.ui.modal .ui.segment.horizontal {
+  height: 100%;
   display: flex;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
+  padding: 0;
 }
-@media (max-width: 576px) {
-  .modal {
-    width: 100%;
-  }
-}
-.modal .modalPostion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 30px 20px;
-}
-.modal .modalContent {
-  min-width: 80%;
-  min-height: 160px;
-  max-height: 100%;
-  overflow: auto;
-  background: #fff;
+.ui.modal .ui.segment.horizontal .img {
+  width: 30%;
+  height: 100px;
+  background: #eee;
   border-radius: 3px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  overflow: hidden;
 }
-.modal .modalContent .contentBlock {
-  font-size: 1.6rem;
-  padding: 30px 20px 0;
-}
-.modal .modalContent .btnBlock {
-  display: flex;
-  justify-content: center;
-  padding: 30px 20px;
-  position: sticky;
-  bottom: 0;
-  background: #fff;
-}
-.modal .modalContent .btnBlock.btnTwo {
-  justify-content: space-between;
-}
-.modal .modalContent .btnBlock button {
-  width: 45%;
-  font-size: 1.6rem;
-  color: #fff;
-  padding: 10px;
+.ui.modal .ui.segment.horizontal .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 3px;
 }
-.modal .modalContent .btnBlock button.cancel {
-  background: #666b80;
+.ui.modal .ui.segment.horizontal .content {
+  width: 70%;
+  padding: 1em;
 }
-.modal .modalContent .btnBlock button.confirm {
-  background: #e05f5f;
+.ui.modal .ui.segment.horizontal .content .remark {
+  font-size: 0.8rem;
+  color: #898989;
 }/*# sourceMappingURL=style.css.map */

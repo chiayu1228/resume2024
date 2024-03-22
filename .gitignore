@@ -1,4 +1,5 @@
 .vscode
 img/original/*
 js/*
+public/_template.html
 project.html

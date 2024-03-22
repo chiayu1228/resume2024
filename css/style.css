@@ -369,8 +369,8 @@ main .ui.grid.container.resumeBg {
   border-width: 0;
 }
 
-ol li p {
-  line-height: 1.2;
+ol li::before {
+  line-height: 1.6;
 }
 
 .ui.modal .content.scrolling {
@@ -424,7 +424,7 @@ ol li p {
   height: 100px;
 }
 .ui.modal .ui.segment.horizontal .content {
-  width: 70%;
+  width: 60%;
   padding: 1em;
 }
 .ui.modal .ui.segment.vertical {
@@ -452,7 +452,7 @@ ol li p {
 }
 @media (max-width: 576px) {
   .ui.modal .ui.segment.vertical .content {
-    width: 70%;
+    width: 60%;
     padding: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

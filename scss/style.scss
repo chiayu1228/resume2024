@@ -472,9 +472,13 @@ main {
 //+ 自傳
 ol {
     li {
-        p {
-            line-height: 1.2;
+        &::before {
+            line-height: 1.6;
         }
+
+        // p {
+        //     line-height: 1.2;
+        // }
     }
 }
 
@@ -545,7 +549,7 @@ ol {
             }
 
             .content {
-                width: 70%;
+                width: 60%;
                 padding: 1em;
             }
         }
@@ -573,7 +577,7 @@ ol {
                 padding: 1em 0.5em;
 
                 @include mobile {
-                    width: 70%;
+                    width: 60%;
                     padding: 1em;
                 }
             }
